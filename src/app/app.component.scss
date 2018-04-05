@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+
+body {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+.chrome {
+  position: relative;
+  background-image: -webkit-linear-gradient(
+    #378dbc 0%,
+    #b6e8f1 46%,
+    #ffffff 50%,
+    #32120e 54%,
+    #ffc488 58%,
+    #582c11 90%,
+    #ec9b4e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px #f5f5f5;
+  font-size: 100px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+}
+.chrome:before {
+  content: 'ANGULAR';
+  position: absolute;
+  left: 28rem;
+  top: 0;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-position: -980px 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  padding-right: 900px;
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.dreams {
+  position: absolute;
+  margin: 0px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 100px;
+  color: #f975f7;
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg); /* IE 9 */
+  -webkit-transform: rotate(-15deg); /* Safari and Chrome */
+  margin-left: 800px;
+  margin-top: -60px;
+  -webkit-text-stroke: 1px #f008b7;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  z-index: 20;
+}
+.windows .dreams {
+  -webkit-text-stroke: 4px #f008b7;
+}
+@-webkit-keyframes chrome_effect {
+  0% {
+    background-position: -680px 0;
+  }
+  10% {
+    background-position: 420px 0;
+  }
+  100% {
+    background-position: 420px 0;
+  }
+}
+.bookmarklet {
+  position: fixed;
+  line-height: 0 !important;
+  color: transparent !important;
+  z-index: 100;
+  top: 30px;
+  left: 17px;
+  color: white;
+  font-weight: bold;
+  font-size: 300%;
+  background-image: url('/assets/angular.png');
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+}
+.drag-me {
+  color: white !important;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+  .gif {
+    margin: 3rem;
+    max-width: 80vw;
+    width: 80vh;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
