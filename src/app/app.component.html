@@ -1,5 +1,10 @@
-<div *ngIf="isMobile;else desktopView">
+<div *ngIf="isMobile;else desktopView"
+     style="text-align: center">
     <h1 style="color: white">PLEASE USE A DESKTOP DEVICE 😊</h1>
+    <img class="gif"
+         style="width: 90vw"
+         src="./assets/gif.gif"
+         alt="">
 </div>
 
 <ng-template #desktopView>
