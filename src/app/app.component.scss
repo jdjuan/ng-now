@@ -104,8 +104,9 @@ body {
   text-align: center;
   .gif {
     margin: 3rem;
-    max-width: 80vw;
-    width: 80vh;
+    max-width: 45vw;
+    width: 45vw;
+    min-width: 45vw;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 }
