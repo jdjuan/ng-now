@@ -1,21 +1,27 @@
-<a class="bookmarklet"
-   href="javascript: window.open(location.href.replace('github.com', 'stackblitz.com/github'))">ngNow
-
-    </a>
-<span class="drag-me">Drag Me!</span>
-<div class="center">
-    <div id="wrapper">
-        <h1 class="chrome">ANGULAR</h1>
-        <h3 class="dreams">Now</h3>
-    </div>
-    <div style="color: white">
-        Run Angular projects with one click
-    </div>
-    <img class="gif"
-         src="./assets/gif.gif"
-         alt="">
+<div *ngIf="isMobile;else desktopView">
+    <h1 style="color: white">PLEASE USE A DESKTOP DEVICE 😊</h1>
 </div>
 
+<ng-template #desktopView>
+    <a class="bookmarklet"
+       href="javascript: window.open(location.href.replace('github.com', 'stackblitz.com/github'))">ngNow
 
-<span style="color: white; position: fixed; bottom: 10px; left: 10px;">’80s Typography By David Parker</span>
-<span style="color: white; position: fixed; bottom: 10px; right: 10px">Made with 💙 by <a href="http://twitter.com/jdjuan">Juan Herrera</a> using <a href="https://stackblitz.com/">StackBlitz</a></span>
+    </a>
+    <span class="drag-me">Drag Me!</span>
+    <div class="center">
+        <div id="wrapper">
+            <h1 class="chrome">ANGULAR</h1>
+            <h3 class="dreams">Now</h3>
+        </div>
+        <div style="color: white">
+            Run Angular projects with one click
+        </div>
+        <img class="gif"
+             src="./assets/gif.gif"
+             alt="">
+    </div>
+
+
+    <span style="color: white; position: fixed; bottom: 10px; left: 10px;">’80s Typography By David Parker</span>
+    <span style="color: white; position: fixed; bottom: 10px; right: 10px">Made with 💙 by <a href="http://twitter.com/jdjuan">Juan Herrera</a> using <a href="https://stackblitz.com/">StackBlitz</a></span>
+</ng-template>
